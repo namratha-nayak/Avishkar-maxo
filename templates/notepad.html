@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  
+	<head>
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}"/> 
+	
+    </head>
+    <body>
+    	<form action="" method="_POST">
+    		<textarea class="ckeditor" name="editor"></textarea>
+      
+  
+
+	<script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
+	<script>CKEDITOR.replace('editor')</script>
+		
+
+    <input  type="submit" value="SAVE" style="
+                height:50px;
+	            width:150px;
+	            background-color: #dcAAc0;
+	            color:#2e2e2e;
+	            font-family:'poppins', cursive, sans-serif;
+	            font-weight: bold;
+	            border-radius: 15PX">
+	            <?php include src="{{ url_for('static', filename='save/database.php') }}"?>
+
+	</body>
+</html>
+<!--AddHandler application/x-httpd-php .html>-->
+
+
+   
