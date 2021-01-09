@@ -5,7 +5,7 @@
 	            	$text=$_POST['editor'];
 	            	echo "$text";
 	            	$con=mysqli_connect('localhost','root','','ckeditor') or die("error");
-	            	$query=mysqli_query($con, "INSERT INTO content (content) VALUES ('$text)");
+	            	$query=mysqli_query($con, "INSERT INTO content (content) VALUES ('$text));
 	            	if($query)
 	            	{
 	            		echo "saved";

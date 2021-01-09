@@ -14,7 +14,11 @@
 	<script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
 	<script>CKEDITOR.replace('editor')</script>
 		
-
+    <?php
+	            if(isset($_POST['editor']))
+	            {
+	            	$text=$_POST['editor'];
+	            	echo "$text";?>
     <input  type="submit" value="SAVE" style="
                 height:50px;
 	            width:150px;
