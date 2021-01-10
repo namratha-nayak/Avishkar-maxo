@@ -83,6 +83,11 @@ def stuhome():
 def notepad():
     return render_template('notepad.html')
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+
 
 
 if __name__ == '__main__':
