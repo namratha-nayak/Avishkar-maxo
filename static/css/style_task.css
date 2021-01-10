@@ -1,0 +1,27 @@
+*{
+	background-color: #2e2e2e;
+	font-family: "poppins", cursive, sans-serif;
+  font-weight: bold;
+  
+}
+h1{
+	color:#dcaac0;
+	font-size:54px;
+    text-align: center;
+    
+    top:50px;
+}
+img
+{
+  
+  width: 20%;
+  height: 30%;
+}
+h3{
+  color:#dcaac0;
+}
+h2{
+  color:#dcaac0;
+}
+a {color:#dcaac0;font-family: "poppins", cursive, sans-serif;
+  font-weight: bold;}
