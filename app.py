@@ -83,9 +83,9 @@ def stuhome():
 def notepad():
     return render_template('notepad.html')
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
+@app.route('/task')
+def task():
+    return render_template('task.html')
 
 
 
