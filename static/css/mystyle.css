@@ -1,0 +1,39 @@
+body{
+    background: #2E2E2E;
+    color: #DCAAC0;
+	font-family:'Arial', sans-serif;
+	font-size:14px;
+}
+
+.my-button{
+	width: 300px;
+	height: 60px;
+	font-size: 30px;
+	font-family: lato;
+	background-color: #009432;
+	border: 0;
+	margin-top: 20px;
+	box-shadow: 2px 2px #DCAAC0;
+}
+
+.my-button-2{
+	width: 300px;
+	height: 60px;
+	font-size: 30px;
+	font-family: lato;
+	background-color: #EA2027;
+	border: 0;
+	margin-top: 20px;
+	box-shadow: 2px 2px #DCAAC0;
+}
+
+.my-button-3{
+	width: 300px;
+	height: 60px;
+	font-size: 30px;
+	font-family: lato;
+	background-color: #1B1464;
+	border: 0;
+	margin-top: 20px;
+	box-shadow: 2px 2px #DCAAC0;
+}

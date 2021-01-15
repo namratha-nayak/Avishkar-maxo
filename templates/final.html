@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>final</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mystyle.css') }}"/>
+		
+	</head>
+	
+<body>
+	<a href="{{url_for('home')}}"> <img class= "left" src="{{url_for('static', filename='img/left.png')}}"></a>
+    <center>
+
+    <h1>WELCOME TO THE PAGE!</h1>
+	<p><h2>“If future generations are to remember us more with gratitude than sorrow, we must achieve more than just the miracles of technology. We must also leave them a glimpse of the world as it was created, not just as it looked when we got through with it.”</h2></P>
+	<p><h2> In order improve memory, focus, vocabulary, and overall mental acuity the Word search puzzle may help you and test youe knowledge in science.</h2></p>
+	<p><h2>If you want to play word search puzzle click on first option!</h2></p>
+	<p><h2>If you want the Aptitude quiz questions click on second option!</h2></p>
+	<p><h2>If you want to practice quiz click on third option!</h2></p>
+    <button class="my-button"><a href="{{url_for('wordsearch')}}">wordsearch</button> <br>
+	
+	<button class="my-button-2"><a href="{{url_for('index1')}}">Aptitude Quiz</button> <br>
+	
+	<button class="my-button-3"><a href="{{url_for('link')}}">Quiz</button>
+	
+    </center>
+</body>
+
+
+</html>

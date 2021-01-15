@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Enhancement Pack</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}"/>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script>
+  function showAlert() {
+    alert ("Successfully logged in");
+  }
+  </script>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+<body onload="showAlert()">
+  <form onload="showAlert()" method="post">
+	<img class="home" src="{{url_for('static', filename='img/home.svg')}}">
+	<!-- <div class="container"> -->
+		<!-- <div class="img">
+			<img src="../img/bg.svg">
+		</div>
+		<div class="login-content"> -->
+		
+
+		<center>
+<div class="avish">
+
+			<img src="{{url_for('static', filename='img/avishkar.png')}}">
+		</div>
+	       
+				<h3>AVISHKAR EDUCATIONAL TRUST</h3></center> 
+        <br><!-- <br><br><br><br> <br>
+<br><br> -->
+	
+    <div class="msg">{{ msg }}</div>
+        <center><h1>Welcome {{name}}!</h1> </center>  
+        <center>    
+        <div class="box"><a href="{{url_for('bot')}}">
+          <!-- <center> -->
+        <div class="btn1">
+            <div class="bot"> <img src="{{url_for('static', filename='img/bot.svg')}}"></div> 
+          Teacher Bot</div></center></a></div></div></center>  
+          <center>    
+        <div class="box"><a href="{{url_for('task')}}">
+          <!-- <center> -->
+        <div class="btn1">
+            <div class="bot"> <img src="{{url_for('static', filename='img/task.svg')}}"></div> 
+          Task manager</div></center></a></div></div></center>  
+          <center>    
+        <div class="box"><a href="{{url_for('stuhome')}}">
+          <!-- <center> -->
+        <div class="btn1">
+            <div class="bot"> <img src="{{url_for('static', filename='img/note.svg')}}"></div> 
+          Note Maker</div></center></a></div></div></center>  
+<center>    
+        <div class="box"><a href="{{url_for('main')}}">
+          <!-- <center> -->
+        <div class="btn1">
+            <div class="bot"> <img src="{{url_for('static', filename='img/practice.svg')}}"></div> 
+          Practice Questions</div></center></a></div></div></center>  
+<center>    
+        <div class="box"><a href="{{url_for('final')}}">
+          <!-- <center> -->
+        <div class="btn1">
+            <div class="bot"> <img src="{{url_for('static', filename='img/apt.svg')}}"></div> 
+          Aptitude</div></center></a></div></div></center>  
+
+
+
+         <!--  <a href="index.html">
+          <center>
+        <div class="btn1">
+            <div class="bot"> <img src="../img/task.svg"></div>
+          
+          Task manager</div></center></a>
+          <a href="index.html">
+          <center>
+        <div class="btn1">
+            <div class="bot"> <img src="../img/note.svg"></div>
+          
+          Note Maker</div></center></a>
+           <a href="index.html">
+          <center>
+        <div class="btn1">
+            <div class="bot"> <img src="../img/practice.svg"></div>
+          
+          Practice Questions</div></center></a>
+           <a href="index.html">
+          <center>
+        <div class="btn1">
+            <div class="bot"> <img src="../img/apt.svg"></div>
+          
+          Aptitute</div></center></a>
+ -->
+
+
+       
+              
+               
+              
+           		
+              
+              <!-- </form> -->
+        </div>
+        </center>
+   <!--  </div> -->
+
+    <!-- <script type="text/javascript" src="../js/main.js"></script> -->
+  </form>
+</body>
+</html>

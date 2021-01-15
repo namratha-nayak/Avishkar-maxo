@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_bot.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<img class= "home" src="{{url_for('static', filename='img/bot.svg')}}">
+	<a href="{{url_for('home')}}"> <img class= "left" src="{{url_for('static', filename='img/left.png')}}"></a>
+	<!-- <img class= "right" src="{{url_for('static', filename='img/right.png')}}"> -->
+<h1>Welcome to Teacher Bot!</h1>
+<div>
+<div id="chatbox">
+<p class="botText"><span>Hi! I hope you are doing good. Let me know your query, so that I can help them solve.</span></p>
+</div>
+<h7>
+<div id="userInput">
+<input id="textInput" type="text" name="msg" placeholder="Message">
+<input id="buttonInput" type="submit" value="Send">
+</h7>
+</div>
+</div>
+<script>
+function getBotResponse() {
+var rawText = $("#textInput").val();
+var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+$.get("/get", { msg: rawText }).done(function(data) {
+var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+$("#buttonInput").click(function() {
+getBotResponse();
+})
+</script>
+</div>
+</body>
+</html>

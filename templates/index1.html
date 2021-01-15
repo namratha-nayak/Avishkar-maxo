@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Quiz questions</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_index.css') }}"/>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<a href="{{url_for('final')}}"> <img class= "left" src="{{url_for('static', filename='img/left.png')}}"></a>
+	    <div id="container">
+		    <header>
+			   <h1>APTITUDE QUIZ</h1>
+			   <p>Test your knowledge in <strong>Science</strong></p>
+			</header>
+			<section>
+			    <div id="results"></div>
+				<h2>Chemistry</h2>
+				<form name="quizForm" onsubmit="return submitAnswers()">
+				    <h3>1.Magnesium ribbon is rubbed before burning because it has a coating of</h3>
+					<input type="radio" name="q1" value="a" id="q1a">a. basic magnesium carbonate<br>
+					<input type="radio" name="q1" value="b" id="q1b">b. basic magnesium oxide<br>
+					<input type="radio" name="q1" value="c" id="q1c">c. basic magnesium sulphide<br>
+					<input type="radio" name="q1" value="d" id="q1d">d. basic magnesium chloride<br>
+					
+					<h3>2.Which of the following statements about the given reaction are correct?
+                    3Fe (s) + 4H2O (g) → Fe3O4 (s) + 4 H2 (g)
+					(i) Iron metal is getting oxidised
+                    (ii) Water is getting reduced
+                    (iii) Water is acting as reducing agent
+                    (iv) Water is acting as oxidising agent</h3>
+					<input type="radio" name="q2" value="a" id="q2a">a. (i), (zi) and (iii)<br>
+					<input type="radio" name="q2" value="b" id="q2b">b. (in) and (iv)<br>
+					<input type="radio" name="q2" value="c" id="q2c">c. (i), (ii) and (iv)<br>
+					<input type="radio" name="q2" value="d" id="q2d">d. (ii) and (iv)<br>
+					
+					<h3>3.Oxidation is a process which involves</h3>
+					<input type="radio" name="q3" value="a" id="q3a">a. addition of oxygen<br>
+					<input type="radio" name="q3" value="b" id="q3b">b. addition of hydrogen<br>
+					<input type="radio" name="q3" value="c" id="q3c">c. removal of oxygen<br>
+					<input type="radio" name="q3" value="d" id="q3d">d. removal of hydrogen<br>
+					
+					<h3>4.The process of reduction involves</h3>
+					<input type="radio" name="q4" value="a" id="q4a">a. addition of oxygen<br>
+					<input type="radio" name="q4" value="b" id="q4b">b. addition of hydrogen<br>
+					<input type="radio" name="q4" value="c" id="q4c">c. removal of oxygen<br>
+					<input type="radio" name="q4" value="d" id="q4d">d. removal of hydrogen<br> 
+					
+					<h3>5.Give the ratio in which hydrogen and oxygen are present in water by volume.</h3>
+					<input type="radio" name="q5" value="a" id="q5a">a. 1:2<br>
+					<input type="radio" name="q5" value="b" id="q5b">b. 1:4<br>
+					<input type="radio" name="q5" value="c" id="q5c">c. 2:1<br>
+					<input type="radio" name="q5" value="d" id="q5d">d. 1:8<br>
+					
+					<h3>6.What happens when a solution of an acid is mixed with a solution of a base in a test tube?
+                    (i) Temperature of the solution decreases
+                    (ii) Temperature of the solution increases
+                    (in) Temperature of the solution remains the same
+                    (iv) Salt formation takes place</h3>
+					<input type="radio" name="q6" value="a" id="q6a">a. (i) and (iv)<br>
+					<input type="radio" name="q6" value="b" id="q6b">b. (i) and (iii)<br>
+					<input type="radio" name="q6" value="c" id="q6c">c. (ii) only<br>
+					<input type="radio" name="q6" value="d" id="q6d">d. (ii) and (iv)<br>
+					
+					<h3>7.When hydrogen chloride gas is prepared on a humid day, the gas is usually passed through the guard tube containing calcium chloride. The role of calcium chloride taken in the guard tube is to</h3>
+					<input type="radio" name="q7" value="a" id="q7a">a. absorb the evolved gas<br>
+					<input type="radio" name="q7" value="b" id="q7b">b. moisten the gas<br>
+					<input type="radio" name="q7" value="c" id="q7c">c. absorb moisture from the gas<br>
+					<input type="radio" name="q7" value="d" id="q7d">d. absorb Cl– ions from the evolved gas<br>
+					
+					<h3>8.Which one of the following salts does not con-tain water of crystallisation?</h3>
+					<input type="radio" name="q8" value="a" id="q8a">a. Blue vitriol<br>
+					<input type="radio" name="q8" value="b" id="q8b">b. Baking soda<br>
+					<input type="radio" name="q8" value="c" id="q8c">c. Washing soda<br>
+					<input type="radio" name="q8" value="d" id="q8d">d. Gypsum<br>
+					
+					<h3>9. In terms of acidic strength, which one of the following is in the correct increasing order?</h3>
+					<input type="radio" name="q9" value="a" id="q9a">a. Water < Acetic acid < Hydrochloric acid<br>
+					<input type="radio" name="q9" value="b" id="q9b">b. Water < Hydrochloric acid < Acetic acid<br>
+					<input type="radio" name="q9" value="c" id="q9c">c. Acetic acid < Water < Hydrochloric acid<br>
+					<input type="radio" name="q9" value="d" id="q9d">d. Hydrochloric acid < Water < Acetic acid<br>
+					
+					<h3>10.Tomato is a natural source of which acid?</h3>
+					<input type="radio" name="q10" value="a" id="q10a">a. Acetic acid<br>
+					<input type="radio" name="q10" value="b" id="q10b">b. Citric acid<br>
+					<input type="radio" name="q10" value="c" id="q10c">c. Tartaric acid<br>
+					<input type="radio" name="q10" value="d" id="q10d">d. Oxalic acid<br>
+					
+					<h3>11.The most abundant metal in the earth’s crust is</h3>
+					<input type="radio" name="q11" value="a" id="q11a">a. Iron<br>
+					<input type="radio" name="q11" value="b" id="q11b">b. Aluminium<br>
+					<input type="radio" name="q11" value="c" id="q11c">c. Calcium<br>
+					<input type="radio" name="q11" value="d" id="q11d">d. Sodium<br>
+					
+					<h3>12.Al2O3 + 2NaOH → …… + H2O</h3>
+					<input type="radio" name="q12" value="a" id="q12a">a. Al(OH)3<br>
+					<input type="radio" name="q12" value="b" id="q12b">b. Na2O<br>
+					<input type="radio" name="q12" value="c" id="q12c">c. NaAlO2<br>
+					<input type="radio" name="q12" value="d" id="q12d">d. AlNaO2<br>
+					
+					<h3>13.The electronic configuration of three elements X, Y and Z are as follows:
+X = 2, 4, Y = 2, 7, Z = 2,1 Which two elements will combine to form an ionic compound and write the correct formula,</h3>
+					<input type="radio" name="q13" value="a" id="q13a">a. X2Y<br>
+					<input type="radio" name="q13" value="b" id="q13b">b. YZ<br>
+					<input type="radio" name="q13" value="c" id="q13c">c. XZ3<br>
+					<input type="radio" name="q13" value="d" id="q13d">d. Y2Z<br>
+					
+					<h3>14.An element X is soft and can be cut with a knife. This is very reactive to air and cannot be kept open in air. It reacts vigorously with water. Identify the element from the following</h3>
+					<input type="radio" name="q14" value="a" id="q14a">a. Mg<br>
+					<input type="radio" name="q14" value="b" id="q14b">b. Na<br>
+					<input type="radio" name="q14" value="c" id="q14c">c. P<br>
+					<input type="radio" name="q14" value="d" id="q14d">d. Ca<br>
+					
+					<h3>15.Copper objects lose their shine and form green coating of</h3>
+					<input type="radio" name="q15" value="a" id="q15a">a. Copper oxide<br>
+					<input type="radio" name="q15" value="b" id="q15b">b. Copper hydroxide and Copper oxide<br>
+					<input type="radio" name="q15" value="c" id="q15c">c. Basic Copper carbonate<br>
+					<input type="radio" name="q15" value="d" id="q15d">d. Copper carbonate<br>
+					
+					<h3>16.C3H8 belongs to the homologous series of</h3>
+					<input type="radio" name="q16" value="a" id="q16a">a. Alkynes<br>
+					<input type="radio" name="q16" value="b" id="q16b">b. Alkenes<br>
+					<input type="radio" name="q16" value="c" id="q16c">c. Alkanes<br>
+					<input type="radio" name="q16" value="d" id="q16d">d. Cyclo alkanes<br>
+					
+					<h3>17.The number of isomers of pentane is</h3>
+					<input type="radio" name="q17" value="a" id="q17a">a. 2<br>
+					<input type="radio" name="q17" value="b" id="q17b">b. 3<br>
+					<input type="radio" name="q17" value="c" id="q17c">c. 4<br>
+					<input type="radio" name="q17" value="d" id="q17d">d. 5<br>
+					
+					<h3>18.Which of the following belongs to homologous series of alkynes?
+C6H6, C2H6, C2H4, C3H4.</h3>
+					<input type="radio" name="q18" value="a" id="q18a">a. C6H6<br>
+					<input type="radio" name="q18" value="b" id="q18b">b. C2H4<br>
+					<input type="radio" name="q18" value="c" id="q18c">c. C2H6<br>
+					<input type="radio" name="q18" value="d" id="q18d">d. C3H4<br>
+					
+					<h3>19.A soap molecule has a</h3>
+					<input type="radio" name="q19" value="a" id="q19a">a. hydrophobic head and hydrophobic tail<br>
+					<input type="radio" name="q19" value="b" id="q19b">b. hydrophobic head and hydrophilic tail<br>
+					<input type="radio" name="q19" value="c" id="q19c">c. hydrophilic head and hydrophilic tail<br>
+					<input type="radio" name="q19" value="d" id="q19d">d. hydrophilic head and hydrophobic tail<br>
+					
+					<h3>20.Give the IUPAC name of CH3COOC2H5.</h3>
+					<input type="radio" name="q20" value="a" id="q20a">a. Ethyl ethanoic acid<br>
+					<input type="radio" name="q20" value="b" id="q20b">b. Butanoate<br>
+					<input type="radio" name="q20" value="c" id="q20c">c. Ethyl ethanoate<br>
+					<input type="radio" name="q20" value="d" id="q20d">d. Etyl methyl carboxylic acid<br>
+					
+					<h3>21.At the time of Mendeleev, the number of elements known was</h3>
+					<input type="radio" name="q21" value="a" id="q21a">a. 63<br>
+					<input type="radio" name="q21" value="b" id="q21b">b. 65<br>
+					<input type="radio" name="q21" value="c" id="q21c">c. 62<br>
+					<input type="radio" name="q21" value="d" id="q21d">d. 64<br>
+					
+					<h3>22.An atom of an element has the electronic confi-guration 2,8,2. To which group does it belong?</h3>
+					<input type="radio" name="q22" value="a" id="q22a">a. 4th group<br>
+					<input type="radio" name="q22" value="b" id="q22b">b. 6th group<br>
+					<input type="radio" name="q22" value="c" id="q22c">c. 3rd group<br>
+					<input type="radio" name="q22" value="d" id="q22d">d. 2nd group<br>
+					
+					<h3>23.Pick out the chemically most reactive elements from the given triads.
+Li, Na, K F, Cl, Br</h3>
+					<input type="radio" name="q23" value="a" id="q23a">a. Li and F<br>
+					<input type="radio" name="q23" value="b" id="q23b">b. Li and Br<br>
+					<input type="radio" name="q23" value="c" id="q23c">c. K and F<br>
+					<input type="radio" name="q23" value="d" id="q23d">d. K and Br<br>
+					
+					<h3>24.Name the neutral atom in the Periodic Table which has the same number of electrons as K+ and Cl-.</h3>
+					<input type="radio" name="q24" value="a" id="q24a">a. Helium<br>
+					<input type="radio" name="q24" value="b" id="q24b">b. Argon<br>
+					<input type="radio" name="q24" value="c" id="q24c">c. Neon<br>
+					<input type="radio" name="q24" value="d" id="q24d">d. Krypton<br>
+					
+					<h3>25.Consider the following elements
+20Ca, 8Or 18Ar, 16S, 4Be, 2He
+Which of the above elements would you expect to be in group 16 of the Periodic Table?</h3>
+					<input type="radio" name="q25" value="a" id="q25a">a. 20Ca and 16S<br>
+					<input type="radio" name="q25" value="b" id="q25b">b. 20Ca and 8O<br>
+					<input type="radio" name="q25" value="c" id="q25c">c. 18Ar and 16S<br>
+					<input type="radio" name="q25" value="d" id="q25d">d. 8O and 16S<br>
+					
+					<h2>Biology</h2>
+					<h3>26.The site of photosynthesis in the cells of a leaf is</h3>
+					<input type="radio" name="q26" value="a" id="q26a">a. chloroplast<br>
+					<input type="radio" name="q26" value="b" id="q26b">b. mitochondria<br>
+					<input type="radio" name="q26" value="c" id="q26c">c. cytoplasm<br>
+					<input type="radio" name="q26" value="d" id="q26d">d. protoplasm<br>
+					
+					<h3>27.The contraction and expansion movement of the walls of the food pipe is called:</h3>
+					<input type="radio" name="q27" value="a" id="q27a">a. translocation<br>
+					<input type="radio" name="q27" value="b" id="q27b">b. transpiration<br>
+					<input type="radio" name="q27" value="c" id="q27c">c. peristaltic movement<br>
+					<input type="radio" name="q27" value="d" id="q27d">d. digestion<br>
+					
+					<h3>28.The exit of unabsorbed food material is regu-lated by</h3>
+					<input type="radio" name="q28" value="a" id="q28a">a. liver<br>
+					<input type="radio" name="q28" value="b" id="q28b">b. anus<br>
+					<input type="radio" name="q28" value="c" id="q28c">c. small intestine<br>
+					<input type="radio" name="q28" value="d" id="q28d">d. anal sphincter<br>
+					
+					<h3>29. What are the products obtained by anaerobic respiration in plants?</h3>
+					<input type="radio" name="q29" value="a" id="q29a">a. Lactic acid + Energy<br>
+					<input type="radio" name="q29" value="b" id="q29b">b. Carbon dioxide + Water + Energy<br>
+					<input type="radio" name="q29" value="c" id="q29c">c. Ethanol + Carbon dioxide + Energy<br>
+					<input type="radio" name="q29" value="d" id="q29d">d. Pyruvate<br>
+					
+					<h3>30.Single circulation, i.e., blood flows through the heart only once during one cycle of passage through the body, is exhibited by which of the following:</h3>
+					<input type="radio" name="q30" value="a" id="q30a">a. hyla, rana, draco<br>
+					<input type="radio" name="q30" value="b" id="q30b">b. whale, dolphin, turtle<br>
+					<input type="radio" name="q30" value="c" id="q30c">c. labeo, chameleon, salamander<br>
+					<input type="radio" name="q30" value="d" id="q30d">d. hippocampus, exocoetus, anabas<br>
+					
+					<h3>31.Roots of plants are:</h3>
+					<input type="radio" name="q31" value="a" id="q31a">a. positively geotropic<br>
+					<input type="radio" name="q31" value="b" id="q31b">b. negatively geotropic<br>
+					<input type="radio" name="q31" value="c" id="q31c">c. positively phototropic<br>
+					<input type="radio" name="q31" value="d" id="q31d">d. None of these<br>
+					
+					<h3>32.The main function of abscisic acid in plants is</h3>
+					<input type="radio" name="q32" value="a" id="q32a">a. to promote cell division.<br>
+					<input type="radio" name="q32" value="b" id="q32b">b. to inhibit growth.<br>
+					<input type="radio" name="q32" value="c" id="q32c">c. to promote growth of stem.<br>
+					<input type="radio" name="q32" value="d" id="q32d">d. to increase the length of cells.<br>
+					
+					<h3>33.Fall of mature leaves and fruits from plants is triggered by which of the following substance?</h3>
+					<input type="radio" name="q33" value="a" id="q33a">a. Auxin<br>
+					<input type="radio" name="q33" value="b" id="q33b">b. Cytokinin<br>
+					<input type="radio" name="q33" value="c" id="q33c">c. Gibberellin<br>
+					<input type="radio" name="q33" value="d" id="q33d">d. Abscisic acid<br>
+					
+					<h3>34.A microscopic gap between a pair of adjacent neurons over which nerve impulses pass is called</h3>
+					<input type="radio" name="q34" value="a" id="q34a">a. neurotransmitter<br>
+					<input type="radio" name="q34" value="b" id="q34b">b. dendrites<br>
+					<input type="radio" name="q34" value="c" id="q34c">c. axon<br>
+					<input type="radio" name="q34" value="d" id="q34d">d. synapse<br>
+					
+					<h3>35.A diabetic patient suffers from deficiency of which hormone?</h3>
+					<input type="radio" name="q35" value="a" id="q35a">a. Thyroxine<br>
+					<input type="radio" name="q35" value="b" id="q35b">b. Testosterone<br>
+					<input type="radio" name="q35" value="c" id="q35c">c. Oestrogen<br>
+					<input type="radio" name="q35" value="d" id="q35d">d. Insulin<br>
+					
+					<h3>36. Bryophyllum can be propagated vegetatively by the</h3>
+					<input type="radio" name="q36" value="a" id="q36a">a. stem<br>
+					<input type="radio" name="q36" value="b" id="q36b">b. leaf<br>
+					<input type="radio" name="q36" value="c" id="q36c">c. root<br>
+					<input type="radio" name="q36" value="d" id="q36d">d. flower<br>
+					
+					<h3>37.A part of the body which responds to the in-structions sent from nervous system is called</h3>
+					<input type="radio" name="q37" value="a" id="q37a">a. receptor<br>
+					<input type="radio" name="q37" value="b" id="q37b">b. effector<br>
+					<input type="radio" name="q37" value="c" id="q37c">c. nerves<br>
+					<input type="radio" name="q37" value="d" id="q37d">d. muscles<br>
+					
+					<h3>38.A feature of reproduction that is common to Amoeba, Yeast and Spirogyra is that</h3>
+					<input type="radio" name="q38" value="a" id="q38a">a. they reproduce asexually<br>
+					<input type="radio" name="q38" value="b" id="q38b">b. they are all unicellular<br>
+					<input type="radio" name="q38" value="c" id="q38c">c. they reproduce only sexually<br>
+					<input type="radio" name="q38" value="d" id="q38d">d. they are all multicellular<br>
+					
+					<h3>39.Vegetative propagation refers to formation of new plants from</h3>
+					<input type="radio" name="q39" value="a" id="q39a">a. stem, flowers and fruits<br>
+					<input type="radio" name="q39" value="b" id="q39b">b. stem, leaves and flowers<br>
+					<input type="radio" name="q39" value="c" id="q39c">c. stem, roots and flowers<br>
+					<input type="radio" name="q39" value="d" id="q39d">d. stem, roots and leaves<br>
+					
+					<h3>40.Plants like banana, rose, jasmine, orange have lost the capacity to produce</h3>
+					<input type="radio" name="q40" value="a" id="q40a">a. seeds<br>
+					<input type="radio" name="q40" value="b" id="q40b">b. buds<br>
+					<input type="radio" name="q40" value="c" id="q40c">c. flower<br>
+					<input type="radio" name="q40" value="d" id="q40d">d. roots<br>
+					
+					<h3>41.Heredity And Evolution Class 10 MCQ Question 1. Process of selecting individuals with desired characters by man is called</h3>
+					<input type="radio" name="q41" value="a" id="q41a">a. Hybridization<br>
+					<input type="radio" name="q41" value="b" id="q41b">b. Reproduction<br>
+					<input type="radio" name="q41" value="c" id="q41c">c. Artificial selection<br>
+					<input type="radio" name="q41" value="d" id="q41d">d. Natural selection<br>
+					
+					<h3>42.A cross between a tall pea-plant (TT) and a short pea-plant (tt) resulted in progenies that were all tall plants because</h3>
+					<input type="radio" name="q42" value="a" id="q42a">a. tallness is the recessive trait.<br>
+					<input type="radio" name="q42" value="b" id="q42b">b. shortness is the dominant trait.<br>
+					<input type="radio" name="q42" value="c" id="q42c">c. height of pea-plant is not governed by gene T or t.<br>
+					<input type="radio" name="q42" value="d" id="q42d">d. tallness is the dominant trait<br>
+					
+					<h3>43.The number of pairs of sex chromosomes in the zygote of a human being is</h3>
+					<input type="radio" name="q43" value="a" id="q43a">a. 2<br>
+					<input type="radio" name="q43" value="b" id="q43b">b. 3<br>
+					<input type="radio" name="q43" value="c" id="q43c">c. 1<br>
+					<input type="radio" name="q43" value="d" id="q43d">d. 4<br>
+					
+					<h3>44. What does the progeny of a tall plant with round seeds and a short plant with wrinkled seeds look like?</h3>
+					<input type="radio" name="q44" value="a" id="q44a">a. All are tall with round seeds.<br>
+					<input type="radio" name="q44" value="b" id="q44b">b. All are short with round seeds.<br>
+					<input type="radio" name="q44" value="c" id="q44c">c. All are tall with wrinkled seeds.<br>
+					<input type="radio" name="q44" value="d" id="q44d">d. All are short with wrinkled seeds.<br>
+					
+					<h3>45.Which of the following is the ancestor of ‘Broccoli’?</h3>
+					<input type="radio" name="q45" value="a" id="q45a">a. Cabbage<br>
+					<input type="radio" name="q45" value="b" id="q45b">b. Cauliflower<br>
+					<input type="radio" name="q45" value="c" id="q45c">c. Wild cabbage<br>
+					<input type="radio" name="q45" value="d" id="q45d">d. Kale<br>
+					
+					<h3>46.Which of the following chemicals causes depletion of the ozone layer?</h3>
+					<input type="radio" name="q46" value="a" id="q46a">a. Carbon tetrachloride<br>
+					<input type="radio" name="q46" value="b" id="q46b">b. Methane<br>
+					<input type="radio" name="q46" value="c" id="q46c">c. Chloro fluoro carbon<br>
+					<input type="radio" name="q46" value="d" id="q46d">d. Carbon monoxide<br>
+					
+					<h3>47.The depletion of the ozone layer causes</h3>
+					<input type="radio" name="q47" value="a" id="q47a">a. global wanning<br>
+					<input type="radio" name="q47" value="b" id="q47b">b. earthquakes<br>
+					<input type="radio" name="q47" value="c" id="q47c">c. increased UV radiations<br>
+					<input type="radio" name="q47" value="d" id="q47d">d. acid rain<br>
+					
+					<h3>48.What will happen if all the deer are killed in the given food chain?
+Grass → Deer → Lion</h3>
+					<input type="radio" name="q48" value="a" id="q48a">a. The population of grass decreases.<br>
+					<input type="radio" name="q48" value="b" id="q48b">b. The population of lions increases.<br>
+					<input type="radio" name="q48" value="c" id="q48c">c. The population of lions remains unchanged.<br>
+					<input type="radio" name="q48" value="d" id="q48d">d. The population of lions decreases and grass increases.<br>
+					
+					<h3>49.Which of the two in the following sets belong to the same trophic level?</h3>
+					<input type="radio" name="q49" value="a" id="q49a">a. Grass; Grasshopper<br>
+					<input type="radio" name="q49" value="b" id="q49b">b. Goat; Spider<br>
+					<input type="radio" name="q49" value="c" id="q49c">c. Hawk ; Rat<br>
+					<input type="radio" name="q49" value="d" id="q49d">d. Frog ; Lizard<br>
+					
+					<h3>50.Excessive exposure to ultraviolet radiation causes</h3>
+					<input type="radio" name="q50" value="a" id="q50a">a. inflammation of liver<br>
+					<input type="radio" name="q50" value="b" id="q50b">b. cancer of skin<br>
+					<input type="radio" name="q50" value="c" id="q50c">c. damage to the lungs<br>
+					<input type="radio" name="q50" value="d" id="q50d">d. jaundice<br>
+					
+					<h3>51.What are the three R’s to save the environment?</h3>
+					<input type="radio" name="q51" value="a" id="q51a">a. Reduce, Recycle, Reuse<br>
+					<input type="radio" name="q51" value="b" id="q51b">b. Replenish, Reduce, Reuse<br>
+					<input type="radio" name="q51" value="c" id="q51c">c. Reconstruct, Recycle, Reduce<br>
+					<input type="radio" name="q51" value="d" id="q51d">d. Reduce, Recycle, Remove<br>
+					
+					<h3>52.Expand the abbreviation GAP</h3>
+					<input type="radio" name="q52" value="a" id="q52a">a. Government Action Plan<br>
+					<input type="radio" name="q52" value="b" id="q52b">b. Ganga Action Plan<br>
+					<input type="radio" name="q52" value="c" id="q52c">c. Government Agency for Pollution Control<br>
+					<input type="radio" name="q52" value="d" id="q52d">d. Government Animal Protection Plant<br>
+					
+					<h3>53.Which gas is formed, when fossil fuels are burnt in insufficient air (oxygen)?</h3>
+					<input type="radio" name="q53" value="a" id="q53a">a. Carbon dioxide<br>
+					<input type="radio" name="q53" value="b" id="q53b">b. Carbon monoxide<br>
+					<input type="radio" name="q53" value="c" id="q53c">c. Both CO2 and CO<br>
+					<input type="radio" name="q53" value="d" id="q53d">d. Neither CO2 nor CO<br>
+					
+					<h3>54.The pH range most conducive for life of fresh water plants and animals is</h3>
+					<input type="radio" name="q54" value="a" id="q54a">a. 6.5 – 7.5<br>
+					<input type="radio" name="q54" value="b" id="q54b">b. 2.0 – 3.5<br>
+					<input type="radio" name="q54" value="c" id="q54c">c. 3.5 – 7.0<br>
+					<input type="radio" name="q54" value="d" id="q54d">d. 9.0 – 10.5<br>
+					
+					<h3>55.What is the purpose of rain-water harvesting?</h3>
+					<input type="radio" name="q55" value="a" id="q55a">a. To hold rain water on the surface of the earth.<br>
+					<input type="radio" name="q55" value="b" id="q55b">b. To recharge ground water.<br>
+					<input type="radio" name="q55" value="c" id="q55c">c. To use water for the irrigation of crops.<br>
+					<input type="radio" name="q55" value="d" id="q55d">d. To rear fish<br>
+					
+					<h2>Physics</h2>
+					<h3>56.When light falls on a smooth polished surface, most of it</h3>
+					<input type="radio" name="q56" value="a" id="q56a">a. is reflected in the same direction<br>
+					<input type="radio" name="q56" value="b" id="q56b">b. is reflected in different directions<br>
+					<input type="radio" name="q56" value="c" id="q56c">c. is scattered<br>
+					<input type="radio" name="q56" value="d" id="q56d">d. is refracted into the second medium<br>
+					
+					<h3>57. Image formed by reflection from a plane mirror is</h3>
+					<input type="radio" name="q57" value="a" id="q57a">a. real and inverted<br>
+					<input type="radio" name="q57" value="b" id="q57b">b. virtual and erect<br>
+					<input type="radio" name="q57" value="c" id="q57c">c. real and erect<br>
+					<input type="radio" name="q57" value="d" id="q57d">d. virtual and inverted<br>
+					
+					<h3>58.If an incident ray passes through the focus, the reflected ray will</h3>
+					<input type="radio" name="q58" value="a" id="q58a">a. pass through the pole<br>
+					<input type="radio" name="q58" value="b" id="q58b">b. be parallel to the principal axis<br>
+					<input type="radio" name="q58" value="c" id="q58c">c. retrace its path<br>
+					<input type="radio" name="q58" value="d" id="q58d">d. pass through the centre of curvature<br>
+					
+					<h3>59.Magnifying power of a concave lens is</h3>
+					<input type="radio" name="q59" value="a" id="q59a">a. always > 1<br>
+					<input type="radio" name="q59" value="b" id="q59b">b. always < 1<br>
+					<input type="radio" name="q59" value="c" id="q59c">c. always = 1<br>
+					<input type="radio" name="q59" value="d" id="q59d">d. can have any value<br>
+					
+					<h3>60.A point object is placed at a distance of 20 cm from a convex mirror of focal length 20 cm. The image will form at:</h3>
+					<input type="radio" name="q60" value="a" id="q60a">a. at infinity<br>
+					<input type="radio" name="q60" value="b" id="q60b">b. at focus<br>
+					<input type="radio" name="q60" value="c" id="q60c">c. at the pole<br>
+					<input type="radio" name="q60" value="d" id="q60d">d. behind the mirror<br>
+					
+					<h3>61.The least distance of distinct vision for a normal eye is</h3>
+					<input type="radio" name="q61" value="a" id="q61a">a. infinity<br>
+					<input type="radio" name="q61" value="b" id="q61b">b. 25 cm<br>
+					<input type="radio" name="q61" value="c" id="q61c">c. 2.5 cm<br>
+					<input type="radio" name="q61" value="d" id="q61d">d. 25 m<br>
+					
+					<h3>62.The defect of vision in which a person cannot see the distant objects clearly but can see nearby objects clearly is called</h3>
+					<input type="radio" name="q62" value="a" id="q62a">a. myopia<br>
+					<input type="radio" name="q62" value="b" id="q62b">b. hypermetropia<br>
+					<input type="radio" name="q62" value="c" id="q62c">c. presbyopia<br>
+					<input type="radio" name="q62" value="d" id="q62d">d. bifocal eye<br>
+					
+					<h3>63.The splitting of white light into different colours on passing through a prism is called</h3>
+					<input type="radio" name="q63" value="a" id="q63a">a. reflection<br>
+					<input type="radio" name="q63" value="b" id="q63b">b. refraction<br>
+					<input type="radio" name="q63" value="c" id="q63c">c. dispersion<br>
+					<input type="radio" name="q63" value="d" id="q63d">d. deviation<br>
+					
+					<h3>64.At noon, the Sun appears white as</h3>
+					<input type="radio" name="q64" value="a" id="q64a">a. blue colour is scattered the most<br>
+					<input type="radio" name="q64" value="b" id="q64b">b. red colour is scattered the most<br>
+					<input type="radio" name="q64" value="c" id="q64c">c. light is least scattered<br>
+					<input type="radio" name="q64" value="d" id="q64d">d. all the colours of the white light are scattered away<br>
+					
+					<h3>65.Twinkling of stars is due to</h3>
+					<input type="radio" name="q65" value="a" id="q65a">a. reflection of light by clouds<br>
+					<input type="radio" name="q65" value="b" id="q65b">b. scattering of light by dust particles<br>
+					<input type="radio" name="q65" value="c" id="q65c">c. dispersion of light by water drops<br>
+					<input type="radio" name="q65" value="d" id="q65d">d. atmospheric refraction of starlight<br>
+					
+					<h3>66.When electric current is passed, electrons move from:</h3>
+					<input type="radio" name="q66" value="a" id="q66a">a. high potential to low potential.<br>
+					<input type="radio" name="q66" value="b" id="q66b">b. low potential to high potential.<br>
+					<input type="radio" name="q66" value="c" id="q66c">c. in the direction of the current.<br>
+					<input type="radio" name="q66" value="d" id="q66d">d. against the direction of the current.<br>
+					
+					<h3>67.The electrical resistance of insulators is</h3>
+					<input type="radio" name="q67" value="a" id="q67a">a. high<br>
+					<input type="radio" name="q67" value="b" id="q67b">b. low<br>
+					<input type="radio" name="q67" value="c" id="q67c">c. zero<br>
+					<input type="radio" name="q67" value="d" id="q67d">d. infinitely high<br>
+					
+					<h3>68.Electrical resistivity of any given metallic wire depends upon</h3>
+					<input type="radio" name="q68" value="a" id="q68a">a. its thickness<br>
+					<input type="radio" name="q68" value="b" id="q68b">b. its shape<br>
+					<input type="radio" name="q68" value="c" id="q68c">c. nature of the material<br>
+					<input type="radio" name="q68" value="d" id="q68d">d. its length<br>
+					
+					<h3>69.Electric power is inversely proportional to</h3>
+					<input type="radio" name="q69" value="a" id="q69a">a. resistance<br>
+					<input type="radio" name="q69" value="b" id="q69b">b. voltage<br>
+					<input type="radio" name="q69" value="c" id="q69c">c. current<br>
+					<input type="radio" name="q69" value="d" id="q69d">d. temperature<br>
+					
+					<h3>70.100 J of heat is produced each second in a 4Ω resistor. The potential difference across the resistor will be:</h3>
+					<input type="radio" name="q70" value="a" id="q70a">a. 30 V<br>
+					<input type="radio" name="q70" value="b" id="q70b">b. 10 V<br>
+					<input type="radio" name="q70" value="c" id="q70c">c. 20 V<br>
+					<input type="radio" name="q70" value="d" id="q70d">d. 25 V<br>
+					
+					<h3>71.The magnetic field lines always begin from</h3>
+					<input type="radio" name="q71" value="a" id="q71a">a. N-pole and end on S-pole.<br>
+					<input type="radio" name="q71" value="b" id="q71b">b. S-pole and end on N-pole.<br>
+					<input type="radio" name="q71" value="c" id="q71c">c. start from the middle and end at N-pole.<br>
+					<input type="radio" name="q71" value="d" id="q71d">d. start from the middle and end at S-pole.<br>
+					
+					<h3>72.The magnetic field is the strongest at</h3>
+					<input type="radio" name="q72" value="a" id="q72a">a. middle of the magnet<br>
+					<input type="radio" name="q72" value="b" id="q72b">b. north pole<br>
+					<input type="radio" name="q72" value="c" id="q72c">c. south pole<br>
+					<input type="radio" name="q72" value="d" id="q72d">d. both poles<br>
+					
+					<h3>73.Material of the core of a strong magnet is</h3>
+					<input type="radio" name="q73" value="a" id="q73a">a. aluminium<br>
+					<input type="radio" name="q73" value="b" id="q73b">b. soft iron<br>
+					<input type="radio" name="q73" value="c" id="q73c">c. copper<br>
+					<input type="radio" name="q73" value="d" id="q73d">d. steel<br>
+					
+					<h3>74.Magnetic lines of force inside current carrying solenoid are</h3>
+					<input type="radio" name="q74" value="a" id="q74a">a. perpendicular to axis.<br>
+					<input type="radio" name="q74" value="b" id="q74b">b. along the axis and are parallel to each other.<br>
+					<input type="radio" name="q74" value="c" id="q74c">c. parallel inside the solenoid and circular at the ends.<br>
+					<input type="radio" name="q74" value="d" id="q74d">d. circular.<br>
+					
+					<h3>75.A soft iron bar is introduced inside a current carrying solenoid. The magnetic field inside the solenoid</h3>
+					<input type="radio" name="q75" value="a" id="q75a">a. will become zero.<br>
+					<input type="radio" name="q75" value="b" id="q75b">b. will increase.<br>
+					<input type="radio" name="q75" value="c" id="q75c">c. will decrease.<br>
+					<input type="radio" name="q75" value="d" id="q75d">d. will remain unaffected.<br>
+					
+					<h3>76.Solar energy can be directly converted to elec-trical energy by which of the following de-vices?</h3>
+					<input type="radio" name="q76" value="a" id="q76a">a. solar cooker<br>
+					<input type="radio" name="q76" value="b" id="q76b">b. solar heater<br>
+					<input type="radio" name="q76" value="c" id="q76c">c. solar cell<br>
+					<input type="radio" name="q76" value="d" id="q76d">d. solar geyser<br>
+					
+					<h3>77.Which of the following is the ultimate source of energy?</h3>
+					<input type="radio" name="q77" value="a" id="q77a">a. Water<br>
+					<input type="radio" name="q77" value="b" id="q77b">b. Sun<br>
+					<input type="radio" name="q77" value="c" id="q77c">c. Fossil fuels<br>
+					<input type="radio" name="q77" value="d" id="q77d">d. Uranium<br>
+					
+					<h3>78.Which of the following gases is the main con-stituent of natural gas?</h3>
+					<input type="radio" name="q78" value="a" id="q78a">a. Methane<br>
+					<input type="radio" name="q78" value="b" id="q78b">b. Ethane<br>
+					<input type="radio" name="q78" value="c" id="q78c">c. Propane<br>
+					<input type="radio" name="q78" value="d" id="q78d">d. Butane<br>
+					
+					<h3>79.Which element is used in solar cells?</h3>
+					<input type="radio" name="q79" value="a" id="q79a">a. Carbon<br>
+					<input type="radio" name="q79" value="b" id="q79b">b. Silicon<br>
+					<input type="radio" name="q79" value="c" id="q79c">c. Phosphorous<br>
+					<input type="radio" name="q79" value="d" id="q79d">d. Sulphur<br>
+					
+					<h3>80.A device in which electricity is produced by the process of controlled nuclear fission reaction is called</h3>
+					<input type="radio" name="q80" value="a" id="q80a">a. nuclear chain reaction<br>
+					<input type="radio" name="q80" value="b" id="q80b">b. hydel power plant<br>
+					<input type="radio" name="q80" value="c" id="q80c">c. nuclear reactor<br>
+					<input type="radio" name="q80" value="d" id="q80d">d. thermal power plant<br>
+					
+		            <br><br>
+					<input type="submit" value="Submit Answers">
+			    </form>
+			</section>
+			<footer>
+			    <p>copyright &copy; 2020</p>
+			</footer>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  
+	<head>
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style3.css') }}"/> 
+	
+    </head>
+    <body>
+    	<a href="{{url_for('stuhome')}}"> <img class= "left" src="{{url_for('static', filename='img/left.png')}}"></a>
+    	<h1 style="font-size: 40PX">NOTEPAD</h2>
+    	<form action="" method="_POST">
+    		<textarea class="ckeditor" name="editor"></textarea>
+      
+    
+
+	<script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
+	<script>CKEDITOR.replace('editor')</script>
+	<input  type="submit" value="SAVE" style="
+                height:50px;
+	            width:150px;
+	            background-color: #dcAAc0;
+	            color:#2e2e2e;
+	            font-family:'poppins', cursive, sans-serif;
+	            font-weight: bold;
+	            border-radius: 15PX">
+	            <img src="{{ url_for('static', filename='images/img4.svg') }}" style="position:fixed;   padding-left:900px;padding-top: -20px;  width: 300px;height: 300px;">
+		
+    <?php
+	            if(isset($_POST['editor']))
+	            {
+	            	$text=$_POST['editor'];
+	            	echo "$text";?>
+    
+	            <?php include src="{{ url_for('static', filename='save/database.php') }}"?>
+
+	</body>
+</html>
+
+
+   
