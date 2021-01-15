@@ -13,3 +13,8 @@ Teacher bot is a chatbot built using the chatterbot python library. It is traine
 Aptitude
 When a student chooses the word search button it directs to a page where there are different themes, in which a student can choose anyone of those and can play the game by clicking and dragging them and If they did not find the solution, they can click the button called Release the score answer. If the student chooses the Aptitude quiz button it directs to the page where they can test the knowledge on a particular subject and finally can see the score. If the student chooses the quiz button it directs to the page where they can find practice social science quiz questions.
 
+Note Taker
+When a student chooses Note taker from the main page it directs to a page with the subjects displayed with subject wise chapter option. When he/she chooses particularly for e.g.  If a student chooses maths, chapter1 option, then it's directed to that respective page with the editor and this is common to all pages i.e. for all subjects. Students can save the notes there itself.
+
+
+
