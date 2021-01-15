@@ -1,4 +1,31 @@
-# Team Avishkar-maxo 
+# Team Avishkar-maxo
+Project Description:
+Student enhancement pack is a small scale website for school students to always be on track in terms of academics, aptitude etc.
+
+Here a student gets :-
+ Individual attention from teacher bot
+Can take down the notes for his/her reference
+ Have a section to practise quizzes, puzzles etc. on aptitude to improve aptitude without getting bored.
+Presence of task manager which helps students to improve in academics by doing daily tasks.
+Separate section for practise questions to go through important questions based on subjects.
+Tools/ Languages used :- 
+Python
+HTML
+CSS
+Flask
+Java script
+Dialog Flow
+
+Basic steps on how to use this :-
+Register/ Login to access account.
+After logging in the student can see five different option :-
+Teacher bot
+Note taker
+Task manager
+Aptitude
+Practice questions
+The student can opt particularly according to his/her choice.  
+
 Task Manager :
 The student chooses the task-manager bot to ask/look at his/her task assigned for the day. The next day, the student has to tell if he/she has completed the task. If no, then they have to state the valid reason. If yes, he/she gets another task. She/he can also enter doubts in the bot or have an appointment fixed with the concerned teacher.
 
@@ -12,9 +39,4 @@ Teacher bot is a chatbot built using the chatterbot python library. It is traine
 
 Aptitude
 When a student chooses the word search button it directs to a page where there are different themes, in which a student can choose anyone of those and can play the game by clicking and dragging them and If they did not find the solution, they can click the button called Release the score answer. If the student chooses the Aptitude quiz button it directs to the page where they can test the knowledge on a particular subject and finally can see the score. If the student chooses the quiz button it directs to the page where they can find practice social science quiz questions.
-
-Note Taker
-When a student chooses Note taker from the main page it directs to a page with the subjects displayed with subject wise chapter option. When he/she chooses particularly for e.g.  If a student chooses maths, chapter1 option, then it's directed to that respective page with the editor and this is common to all pages i.e. for all subjects. Students can save the notes there itself.
-
-
 
